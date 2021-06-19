@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100&family=Source+Code+Pro:wght@200&display=swap');
+
+#app {
+
+  margin:0;
+  padding:0;
+  overflow-x:hidden;
+  font-family: 'JetBrains Mono', monospace;
+  font-family: 'Source Code Pro', monospace;
+  /* font-weight: bold; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+
+}
+
+html,body {
+  margin:0;
+  padding:0;
+}
+
+
+#text {
+
+  font-family: 'Source Code Pro', monospace;
+  border-right: solid white 1px;
+  height: 65px;
+}
+
+.hero{
+  background-color: #588157;
+  height: 100vh;
+  color: white;
+  font-size: 2rem;
+  }
+
+section{
+
+  height: 500px;
+  background-color: #3A5A40;
+  
+
+}
+
+.myname{
+
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: bold;
+  
+}
+
+
+.about_information{
+
+  font-family: 'Source Code Pro', monospace;
+  color: white;
+  font-size: 1.5rem
+
+}
+footer{
+  height: 500px;
+  background-color:#344E41;
+}
+
+nav{
+
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+
+ul{
+  display: flex;
+  list-style-type: none;
+  width: 500px;
+  justify-content: space-around;
+  
+
+}
+
+li{
+
+
+text-decoration: none;
+font-family: 'Source Code Pro', monospace;
+font-size: 1rem;
+}
+
+h1{
+  font-size: 3.6rem;
+  margin: 0;
+  margin-top: 2rem;
+}
+
+p{
+  font-weight: 100;
+  margin: 0;
+}
+
+
+.hero-area{
+
+
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+
+
+
+
+}
+
+
+
+.hero-text{
+
+  font-family: 'Source Code Pro', monospace;
+  margin-left: 7rem;
+  margin-bottom: 100px;
+  
+}
+
+.button{
+
+  height: 60px;
+  width: 200px;
+  font-size: 1.5rem;
+  background-color: #DAD7CD;
+  margin-left: -0.1rem;
+  text-align: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: bold;
+  border-radius: 1.5rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+ 
+
+  color: #344E41;
+
+}
+
+.button:hover {
+
+background-color: #3A5A40;
+color: white;
+
+}
+
+
+.button:active{
+
+  background-color: #164b2c;
+  color: #ffffff;
+
+}
+
+.socials{
+  /* background-color: rgb(23, 66, 43); */
+  /* border-radius: 1.5rem; */
+  display: flex;
+  flex-direction:row;
+  justify-content: flex-end;  
+  position: absolute;
+  left: 900px;
+  bottom: 320px;
+  z-index: 100;
+  visibility:visible;
+
+
+
+}
+.social{
+ 
+  margin: 0.9em;
+  visibility:visible;
+}
+
+#logo{
+
+  width: 25rem;
+  
+
+}
+
+
+.sub_section_one, .sub_section_two{
+
+  display: flex;
+  justify-content: space-around;
+}
+
+
+/* mobile hidden above 1000px */
+
+.mobile-icon{
+visibility: hidden;
+ 
+}
+.mobile-icon{
+visibility: hidden;
+
+
+  
+} 
+
+
+/* Media queries */
+
+
+@media only screen and (max-width: 1200px){
+
+
+
+
+  nav{
+
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      position: absolute;
+      right: 70px;
+      top: 0px;
+      z-index: 1;
+      
+  }
+  
+  
+  ul{
+      text-align: start;
+      list-style-type: none;
+      width: 500px;
+      
+      
+  
+  }
+  
+  li{
+  
+  
+  text-decoration: none;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.2rem;
+  }
+  
+  h1{
+      font-size: 2.6rem;
+      margin: 0;
+      margin-top: 2rem;
+  }
+  
+  p{
+      font-weight: 100;
+      margin: 0;
+  }
+  
+  
+  .hero-area{
+  
+  
+      display: flex;
+      justify-content: space-between;
+      height: 100%;
+      align-items: center;
+  
+  
+  
+  
+  }
+  
+  
+  
+  .hero-text{
+  
+      font-family: 'JetBrains Mono';
+      margin-left: 1rem;
+      margin-bottom: 200px;
+      
+  }
+
+
+  .button{
+
+      height: 25px;
+      width: 120px;
+      font-size: 1.2rem;
+      background-color: #DAD7CD;
+      margin-left: 1rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      font-family: 'JetBrains Mono', sans-serif;
+      font-weight: bold;
+      border-radius: 1.5rem;
+      padding: 0.5rem;
+      margin-top: 2rem;
+      color: #344E41;
+      /* visibility: hidden; */
+  
+  }
+  
+  .button:hover {
+  
+  background-color: #3A5A40;
+  color: white;
+  visibility: hidden;
+  
+  }
+  
+  
+  .button:active{
+  
+      background-color: #2e5a46;
+      color: #ffffff;
+      visibility: hidden;
+  
+  }
+  
+  .socials{
+  
+  
+      visibility: hidden;
+  
+  }
+  .social{
+  
+      /* margin: 0.3em; */
+      visibility: hidden;
+      
+  }
+  
+  #logo{
+  
+      width: 25rem;
+      visibility: hidden;
+  
+  }
+
+  .mobile-icons{
+
+    margin: 3rem 1rem 1rem 1rem;
+    
+  } 
+     
+
+.mobile-icon{
+  /* background-color: coral; */
+  visibility:visible;
+  display: flex;
+  flex-direction: row;
+  margin-right: auto;
+
+
+}
+#twitter,#github,#linkedin{
+  visibility: visible;
+  padding: 0;
+  
+ 
+  
+
+  
+
+ 
+
+
+  
+} 
+}
